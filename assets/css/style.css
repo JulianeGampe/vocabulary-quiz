@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 /** website grid **/
 
 body {
+    color: #201773;
     display: grid;
+    font-family: Cabin, sans-serif;
     grid-template-rows: auto 1fr auto;
     margin: 0;
     min-height: 100vh;
@@ -11,6 +14,8 @@ body {
 }
 
 header {
+    background-color: #201773;
+    color: #fff;
     grid-row: 1;
 }
 
@@ -19,6 +24,8 @@ main {
 }
 
 footer {
+    background-color: #201773;
+    color: #fff;
     grid-row: 3;
 }
 
@@ -122,6 +129,35 @@ footer {
 #box8 {
     margin: 5px;
     padding: 20px;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8,
+#box9,
+#restartgame {
+    background-color: #201773;
+    color: #fff;
+    font-family: Cabin, sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+#box1:hover,
+#box2:hover,
+#box3:hover,
+#box4:hover,
+#box5:hover,
+#box6:hover,
+#box7:hover,
+#box8:hover,
+#box9:hover,
+#restartgame:hover {
+    background-color: #000047;
 }
 
 /** for screen sizes min-width 600px **/
