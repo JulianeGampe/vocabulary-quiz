@@ -7,9 +7,15 @@ For example; Love Running is a site that hopes to help keep people motivated to 
 ![Responsive Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
 
 ## User Stories
-## UX (briefly explain your design)
-### Colour Scheme (explain your colors, etc.... perhaps use coolors.co?)
-### Typography (explain any fonts and icon libraries used, font-awesome/google fonts, etc)
+## UX
+### Colour Scheme
+
+[Color Tool](https://material.io/resources/color/#!/?view.left=1&view.right=1&primary.color=201773) and [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) have been used to find the colors. #201773 is used as the main color and as the background color for header and footer. #000047 is used when hovering over the buttons. To make sure it contrasts well with the background color #fff all colors were tested in a contrast checker.
+
+### Typography 
+
+Google Fonts has been used to find the font, that is displayed on the website. [Cabin](https://fonts.google.com/specimen/Cabin?category=Sans+Serif&preview.text=Vocabulary%20Quiz&preview.text_type=custom#standard-styles) is described as having a touch of modernism as well as having a wide language support including all Western, Central and South/Eastern European languages, which was found suitable for a vocabulary language quiz.
+
 ### Wireframes
 
 Wireframes created with Balsamiq were used to plan the layout of the website.
@@ -84,6 +90,13 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Testing 
 
+- All colors have been tested with a contrast checker.
+
+  ![Color Tool Test](documentation/screenshots/colortestone.png)
+
+  ![Adobe Color Test](documentation/screenshots/colortesttwo.png)
+
+
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
@@ -134,9 +147,12 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The following websites were used to find the colors and do the contrast tests:
+  - [Color Tool](https://material.io/resources/color/#!/?view.left=1&view.right=1&primary.color=201773)
+  - [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer)
+- The font was found on [Google Fonts](https://fonts.google.com/)
+  - [Cabin](https://fonts.google.com/specimen/Cabin?category=Sans+Serif&preview.text=Vocabulary%20Quiz&preview.text_type=custom#standard-styles)
+
 
 ### Media
 
