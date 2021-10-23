@@ -26,8 +26,16 @@ main {
 footer {
     background-color: #201773;
     color: #fff;
+    font-size: .8rem;
     grid-row: 3;
+    padding-bottom: 10px;
 }
+
+footer a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
 
 /** main grid **/
 

@@ -16,6 +16,8 @@ For example; Love Running is a site that hopes to help keep people motivated to 
 
 Google Fonts has been used to find the font, that is displayed on the website. [Cabin](https://fonts.google.com/specimen/Cabin?category=Sans+Serif&preview.text=Vocabulary%20Quiz&preview.text_type=custom#standard-styles) is described as having a touch of modernism as well as having a wide language support including all Western, Central and South/Eastern European languages, which was found suitable for a vocabulary language quiz.
 
+To provide visual cues the link to Instagram in the footer is represented by an icon from [Font Awesome](https://fontawesome.com/v5.15/icons/instagram?style=brands)
+
 ### Wireframes
 
 Wireframes created with Balsamiq were used to plan the layout of the website.
@@ -152,6 +154,8 @@ You can break the credits section up into Content and Media, depending on what y
   - [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer)
 - The font was found on [Google Fonts](https://fonts.google.com/)
   - [Cabin](https://fonts.google.com/specimen/Cabin?category=Sans+Serif&preview.text=Vocabulary%20Quiz&preview.text_type=custom#standard-styles)
+- The icon in the footer was taken from [Font Awesome](https://fontawesome.com/)
+  - [Instagram Icon](https://fontawesome.com/v5.15/icons/instagram?style=brands)
 
 
 ### Media
