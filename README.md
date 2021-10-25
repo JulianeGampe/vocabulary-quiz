@@ -1,12 +1,18 @@
 # Vocabulary Quiz
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
+Vocabulary Quiz is a language game that will allow the user to test their skills in English and German. The quiz is set up so that the user will find matching word pairs. Motivation is kept up by counting the number of attempts the user needs to find all word pairs. The user can try to find all words with the lowest possible amount of attempts.
 
-For example; Love Running is a site that hopes to help keep people motivated to meet up for runs on a regular basis in Dublin, Ireland. The site will be targeted toward runners who are looking for a way to socialise and keep themselves fit. Love Running will be useful for runners to see exactly when and where they should be to join the running club. 
-
-![Responsive Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Responsive Mockup]()
 
 ## User Stories
+
+- As a user I want to be able to see the purpose of the website.
+- As a user I want to see instructions for the quiz so that I know how to play it.
+- As a user I want to be able to click a German language card matching to the given English word so that I can test my knowledge. 
+- As a user I want to see how many attempts I have needed to complete the quiz so that I can try to improve.
+- As a user I want to be able to restart the game so that I don't have to finish it completely before starting again.
+- As a user I want to see social media icons so that I can visit social media websites with one click. 
+
 ## UX
 ### Colour Scheme
 
@@ -28,67 +34,74 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
 ### Existing Features
 
-- __Navigation Bar__
+- __Header__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - The main heading in the header will allow the user to see the purpose of the website.
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+![Header]()
 
-- __The landing page image__
+- __Quiz explanation__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+  - The quiz explantion will guide the user on how to use the Vocabulary Quiz and point out the aim of the quiz.
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+![Quiz explanation]()
 
-- __Club Ethos Section__
+- __English Word__
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+  - In the English Word box the user will see the English word for which they have to find the matching German card.
 
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+![English Word]()
 
-- __Meetup Times section__
+- __German Words__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This section will display nine buttons with nine different German words that the user can click.
+  - If the word is matching the English word, a new English word will appear.
+  - If the word is incorrect the user can try again.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![German Words]()
 
-- __The Footer__ 
+- __Number of Attempts__ 
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
+  - In this section the user can see the overall number of attempts he has made so far.
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+![Attempts]()
 
-- __Gallery__
+- __Restart Game__
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+  - This button will allow the user to restart the game and set the number of attempts to zero. 
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+![Restart Game]()
 
-- __The Sign Up Page__
+- __Footer__
 
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
+  - The footer will display a link to social media.
+  - The user can click the icon to visit the social media website in a separate tab.
 
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+![Footer]()
 
 ### Features Left to Implement
 
-- Another feature idea
+__Quizes for different topics__
+
+- A feature that allows the user to choose a specific topic for which they want to practice new words.
+
+__Quizes for different languages__
+
+ - A feature that allow the user to choose a different language that they want to take the quiz for.
 
 ## Technologies Used
+
+- HTML was used to structure the website semantically and display it in the browser.
+- CSS was used for the presentation and style of the website.
+- CSS grid was used for the layout of the website.
+- JavaScript was used to make the website interactive.
+- [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes.
+- [Gitpod](https://www.gitpod.io/) was used for the development of the website.
+- [Github](https://github.com/) was used to store the code online.
+- Git was used for version control.
+
 
 ## Testing 
 
@@ -156,6 +169,7 @@ You can break the credits section up into Content and Media, depending on what y
   - [Cabin](https://fonts.google.com/specimen/Cabin?category=Sans+Serif&preview.text=Vocabulary%20Quiz&preview.text_type=custom#standard-styles)
 - The icon in the footer was taken from [Font Awesome](https://fontawesome.com/)
   - [Instagram Icon](https://fontawesome.com/v5.15/icons/instagram?style=brands)
+- [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes. 
 
 
 ### Media
