@@ -1,4 +1,10 @@
+/* jshint esversion: 8 */
+
 let englishWords = ["dog", "cat", "fish", "giraffe", "tiger", "lion", "guinea-pig", "cheetah", "horse"];
+let counter = 0;
+let counterSpan = document.getElementById("counter");
+let englishWord = document.getElementById("word");
+let boxes = document.querySelectorAll(".box");
 
 /**
  * compare function
@@ -9,7 +15,6 @@ let englishWords = ["dog", "cat", "fish", "giraffe", "tiger", "lion", "guinea-pi
  */
 
 
-let boxes = document.getElementsByClassName("box");
 
 function compareAnswer(box) {
     if (englishWord.innerText === box.getAttribute("data-vocab")) {
