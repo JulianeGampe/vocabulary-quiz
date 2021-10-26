@@ -52,3 +52,9 @@ boxes.forEach(box => {
 function restartGame() {
 
 }
+
+nextAnimal();
+function nextAnimal() {
+    englishWord.innerText = englishWords[0];
+    englishWords.shift();
+}
