@@ -1,10 +1,13 @@
 /* jshint esversion: 8 */
 
-let englishWords = ["dog", "cat", "fish", "giraffe", "tiger", "lion", "guinea-pig", "cheetah", "horse"];
+const animals = ["dog", "cat", "fish", "giraffe", "tiger", "lion", "guinea pig", "cheetah", "horse"];
+let englishWords = animals.slice(0);
 let counter = 0;
 let counterSpan = document.getElementById("counter");
 let englishWord = document.getElementById("word");
 let boxes = document.querySelectorAll(".box");
+
+
 
 /**
  * compare function
@@ -55,7 +58,9 @@ boxes.forEach(box => {
  * if clicked set number of attempts to 0
  */
 function restartGame() {
-
+    counter = 0;
+    counterSpan.innerText = counter;
+    englishWords = animals.slice(0);
 }
 
 nextAnimal();
