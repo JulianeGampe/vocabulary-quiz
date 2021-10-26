@@ -37,8 +37,11 @@ boxes.forEach(box => {
 /**
  * increase attempts by one each time a germanword box is clicked
  */
-function calculateAttempts () {
-
+ function calculateAttempts () {
+    // counter = counter + 1;
+    // counter += 1;
+    counter++;
+    counterSpan.innerText = counter;
 }
 
 
