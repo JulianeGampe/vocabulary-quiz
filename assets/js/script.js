@@ -11,17 +11,28 @@ let englishWords = ["dog", "cat", "fish", "giraffe", "tiger", "lion", "guinea-pi
 
 let boxes = document.getElementsByClassName("box");
 
-let compare = function() {
-    if (document.getElementById("word").innerHTML === this.getAttribute("data-vocab")) {
-        alert("correct");
+function compareAnswer(box) {
+    if (englishWord.innerText === box.getAttribute("data-vocab")) {
+        box.classList.add("correct");
+        nextAnimal();
+        // alert("correct");
     } else {
-        alert("incorrect");
+        box.classList.add("incorrect");
+        // alert("incorrect");
     }
-};
 
-for (var i=0; i < boxes.length; i++) {
-    boxes[i].addEventListener("click", compare, false);
+    setTimeout(() => {
+        box.classList.remove("correct", "incorrect");
+    }, 1000);    
 }
+
+boxes.forEach(box => {
+    box.addEventListener("click", function() {
+        compareAnswer(box);
+        calculateAttempts();
+    });
+});
+
 
 /**
  * increase attempts by one each time a germanword box is clicked
