@@ -56,7 +56,7 @@ footer a {
     grid-row: 2;
 }
 
-#englishword div {
+#word {
     border: #201773 solid 5px;
     margin: 5px 10%;
     padding: 5px;
@@ -153,7 +153,7 @@ footer a {
     transition: all 0.2s ease-in-out;
 }
 
-.box:hover,
+.box:not(.incorrect):not(.correct):hover,
 #restartgame:hover {
     background-color: #000047;
 }
@@ -240,7 +240,7 @@ footer a {
     }
 
     /** english word box **/
-    #englishword div {
+    #word {
         border: #201773 solid 5px;
         margin: 5px 30%;
         padding: 5px;
