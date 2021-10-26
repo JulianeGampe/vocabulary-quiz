@@ -22,7 +22,9 @@ let boxes = document.querySelectorAll(".box");
 function compareAnswer(box) {
     if (englishWord.innerText === box.getAttribute("data-vocab")) {
         box.classList.add("correct");
-        nextAnimal();
+        if(englishWords.length > 1) {
+            nextAnimal();
+        } 
         // alert("correct");
     } else {
         box.classList.add("incorrect");
@@ -65,6 +67,8 @@ function restartGame() {
 
 nextAnimal();
 function nextAnimal() {
-    englishWord.innerText = englishWords[0];
-    englishWords.shift();
+    let currentAnimal = Math.floor(Math.random() * englishWords.length);
+    englishWord.innerText = englishWords[currentAnimal];
+    let animalIndex = englishWords.indexOf(englishWords[currentAnimal]);
+    englishWords.splice(animalIndex, 1);
 }
