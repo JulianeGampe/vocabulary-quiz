@@ -22,12 +22,12 @@ function compareAnswer(box) {
         box.classList.add("correct");
         if(englishWords.length > 1) {
             nextAnimal();
-        } 
-        // alert("correct");
+        } else {
+            win();
+        }
     } else {
         box.classList.add("incorrect");
-        // alert("incorrect");
-    }
+        }
 
     setTimeout(() => {
         box.classList.remove("correct", "incorrect");
@@ -78,3 +78,24 @@ function nextAnimal() {
     let animalIndex = englishWords.indexOf(englishWords[currentAnimal]);
     englishWords.splice(animalIndex, 1);
 }
+
+/* Modal that displays when the quiz is finished */
+/* code taken from w3schools.com/howto/howto_css_modal.asp */
+let modal = document.getElementById("winModal");
+let closeButton = document.getElementById("close");
+
+function win() {
+    modal.style.display = "block";
+}
+
+/* when the user clicks the modal close button */
+closeButton.addEventListener("click", function() {
+    modal.style.display = "none";
+})
+
+/* when the user clicks outside of the modal it closes */
+window.addEventListener("click", function(event) {
+    if(event.target == modal) {
+        modal.style.display = "none";
+    }
+})
