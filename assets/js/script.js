@@ -6,6 +6,7 @@ let counter = 0;
 let counterSpan = document.getElementById("counter");
 let englishWord = document.getElementById("word");
 let boxes = document.querySelectorAll(".box");
+let restartGameButton = document.getElementById("restartgame");
 
 
 
@@ -60,7 +61,10 @@ function restartGame() {
     counter = 0;
     counterSpan.innerText = counter;
     englishWords = animals.slice(0);
+    nextAnimal();
 }
+
+restartGameButton.addEventListener("click", restartGame);
 
 /**
  * choose a random number within the length of the englishWords array to choose a random animal
