@@ -170,6 +170,7 @@ You can break the credits section up into Content and Media, depending on what y
 - The icon in the footer was taken from [Font Awesome](https://fontawesome.com/)
   - [Instagram Icon](https://fontawesome.com/v5.15/icons/instagram?style=brands)
 - [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes. 
+- Code for the Modal has been taken from [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 
 
 ### Media
