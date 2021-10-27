@@ -16,9 +16,6 @@ let boxes = document.querySelectorAll(".box");
  * in both cases increase number of attempts
  * alert after all nine words are found
  */
-
-
-
 function compareAnswer(box) {
     if (englishWord.innerText === box.getAttribute("data-vocab")) {
         box.classList.add("correct");
@@ -65,6 +62,11 @@ function restartGame() {
     englishWords = animals.slice(0);
 }
 
+/**
+ * choose a random number within the length of the englishWords array to choose a random animal
+ * set the innerText of the englishWord box to the choosen animal
+ * remove the choosen animal from the englishWords array so that it does not appear again
+ */
 nextAnimal();
 function nextAnimal() {
     let currentAnimal = Math.floor(Math.random() * englishWords.length);
