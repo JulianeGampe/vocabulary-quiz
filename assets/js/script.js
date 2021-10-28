@@ -7,6 +7,7 @@ let counterSpan = document.getElementById("counter");
 let englishWord = document.getElementById("word");
 let boxes = document.querySelectorAll(".box");
 let restartGameButton = document.getElementById("restartgame");
+let modalText = document.getElementById("winningtext");
 
 
 
@@ -86,6 +87,7 @@ let closeButton = document.getElementById("close");
 
 function win() {
     modal.style.display = "block";
+    modalText.innerText = `Congratulations! You found all the word pairs! You used ${counter} attempts.\n\nThe minimum possible is 9.`;
 }
 
 /* when the user clicks the modal close button */
