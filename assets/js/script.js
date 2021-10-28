@@ -21,7 +21,7 @@ let modalText = document.getElementById("winningtext");
 function compareAnswer(box) {
     if (englishWord.innerText === box.getAttribute("data-vocab")) {
         box.classList.add("correct");
-        if(englishWords.length > 1) {
+        if(englishWords.length > 0) {
             nextAnimal();
         } else {
             win();
