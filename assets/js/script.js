@@ -20,6 +20,7 @@ let modalText = document.getElementById("winningtext");
  */
 function compareAnswer(box) {
     if (englishWord.innerText === box.getAttribute("data-vocab")) {
+        calculateAttempts();
         box.classList.add("correct");
         if(englishWords.length > 0) {
             nextAnimal();
@@ -27,6 +28,7 @@ function compareAnswer(box) {
             win();
         }
     } else {
+        calculateAttempts();
         box.classList.add("incorrect");
         }
 
@@ -38,7 +40,6 @@ function compareAnswer(box) {
 boxes.forEach(box => {
     box.addEventListener("click", function() {
         compareAnswer(box);
-        calculateAttempts();
     });
 });
 
@@ -47,8 +48,6 @@ boxes.forEach(box => {
  * increase attempts by one each time a germanword box is clicked
  */
  function calculateAttempts () {
-    // counter = counter + 1;
-    // counter += 1;
     counter++;
     counterSpan.innerText = counter;
 }
