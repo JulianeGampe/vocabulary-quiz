@@ -91,11 +91,13 @@ function win() {
 /* when the user clicks the modal close button */
 closeButton.addEventListener("click", function() {
     modal.style.display = "none";
+    restartGame();
 })
 
 /* when the user clicks outside of the modal it closes */
 window.addEventListener("click", function(event) {
     if(event.target == modal) {
         modal.style.display = "none";
+        restartGame();
     }
 })
