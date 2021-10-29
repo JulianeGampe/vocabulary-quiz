@@ -63,7 +63,7 @@ function runQuiz(quizType) {
 
         boxes.forEach(box => {
             box.addEventListener("click", function() {
-                compareAnswer(box);
+                compareAnswer(box, quizType);
             });
         });
     }
@@ -76,23 +76,26 @@ function runQuiz(quizType) {
  * in both cases increase number of attempts
  * alert after all nine words are found
  */
-function compareAnswer(box) {
-    if (englishWord.innerText === box.getAttribute("data-vocab")) {
-        calculateAttempts();
-        box.classList.add("correct");
-        if(englishWords.length > 0) {
-            nextAnimal();
-        } else {
-            win();
-        }
-    } else {
-        calculateAttempts();
-        box.classList.add("incorrect");
-        }
+function compareAnswer(box, quizType) {
+    if(quizType === "animals") {
 
-    setTimeout(() => {
-        box.classList.remove("correct", "incorrect");
-    }, 1000);    
+        if (englishWord.innerText === box.getAttribute("data-vocab")) {
+            calculateAttempts();
+            box.classList.add("correct");
+            if(englishWords.length > 0) {
+                nextAnimal();
+            } else {
+                win();
+            }
+        } else {
+            calculateAttempts();
+            box.classList.add("incorrect");
+            }
+
+        setTimeout(() => {
+            box.classList.remove("correct", "incorrect");
+        }, 1000);    
+    }
 }
 
 /**
