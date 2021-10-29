@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
-/** website grid **/
+/* website grid */
 
 body {
     color: #201773;
@@ -37,23 +37,28 @@ footer a {
 }
 
 
-/** main grid **/
+/* main grid */
 
 #game {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     text-align: center;
 }
 
-#explanation {
+#choosequiz {
     grid-column: 1;
     grid-row: 1;
 }
 
-#englishword {
+#explanation {
     grid-column: 1;
     grid-row: 2;
+}
+
+#englishword {
+    grid-column: 1;
+    grid-row: 3;
 }
 
 #word {
@@ -64,17 +69,17 @@ footer a {
 
 #germanwords {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 #attempts {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 5;
 }
 
 #restart {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 6;
 }
 
 #numberofattempts,
@@ -83,8 +88,35 @@ footer a {
     padding: 5px;
 } 
 
+/* choose quiz grid */
 
-/** german words grid **/
+#choosequiz {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+}
+
+#choosequiztext {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+#animals {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#travel {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#food {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* german words grid */
 
 #germanwords {
     display: grid;
@@ -139,7 +171,7 @@ footer a {
     padding: 20px;
 }
 
-/** box style **/
+/* box style */
 .box:not(#box9) {
     margin: 5px;
     padding: 20px;
@@ -166,9 +198,9 @@ footer a {
     background-color: green;
 }
 
-/** Modal style 
+/* Modal style 
 code taken from: w3schools.com/howto/howto_css_modals.asp 
-**/
+*/
 /* Modal background */
 .modal {
     display: none;
@@ -209,11 +241,11 @@ code taken from: w3schools.com/howto/howto_css_modals.asp
     cursor: pointer;
 }
 
-/** for screen sizes min-width 600px **/
+/* for screen sizes min-width 600px */
 
 @media screen and (min-width: 600px) {
 
-    /** german words grid **/
+    /* german words grid */
     #germanwords {
         display: grid;
         grid-template-columns: 1fr 200px 200px 200px 1fr;
