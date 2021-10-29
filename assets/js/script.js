@@ -1,10 +1,10 @@
 /* jshint esversion: 8 */
 
 const animals = ["dog", "cat", "fish", "giraffe", "tiger", "lion", "guinea pig", "cheetah", "horse"];
-let englishWords = animals.slice(0);
+let animalWords = animals.slice(0);
 let counter = 0;
 let counterSpan = document.getElementById("counter");
-let englishWord = document.getElementById("word");
+let animalWord = document.getElementById("word");
 let boxes = document.querySelectorAll(".box");
 let restartGameButton = document.getElementById("restartgame");
 let modalText = document.getElementById("winningtext");
@@ -79,10 +79,10 @@ function runQuiz(quizType) {
 function compareAnswer(box, quizType) {
     if(quizType === "animals") {
 
-        if (englishWord.innerText === box.getAttribute("data-vocab")) {
+        if (animalWord.innerText === box.getAttribute("data-vocab")) {
             calculateAttempts();
             box.classList.add("correct");
-            if(englishWords.length > 0) {
+            if(animalWords.length > 0) {
                 nextAnimal();
             } else {
                 win();
@@ -124,10 +124,10 @@ restartGameButton.addEventListener("click", restartGame);
  */
 nextAnimal();
 function nextAnimal() {
-    let currentAnimal = Math.floor(Math.random() * englishWords.length);
-    englishWord.innerText = englishWords[currentAnimal];
-    let animalIndex = englishWords.indexOf(englishWords[currentAnimal]);
-    englishWords.splice(animalIndex, 1);
+    let currentAnimal = Math.floor(Math.random() * animalWords.length);
+    animalWord.innerText = animalWords[currentAnimal];
+    let animalIndex = animalWords.indexOf(animalWords[currentAnimal]);
+    animalWords.splice(animalIndex, 1);
 }
 
 /* Modal that displays when the quiz is finished */
