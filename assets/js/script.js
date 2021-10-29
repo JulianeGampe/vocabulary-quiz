@@ -25,6 +25,8 @@ for(let quizButton of quizButtons) {
 function runQuiz(quizType) {
     if(quizType === "animals") {
 
+        nextAnimal();
+
         document.getElementById("box1").setAttribute("data-vocab", "horse");
         let germanWordOne = document.getElementById("box1");
         germanWordOne.innerText = "Pferd";
@@ -122,7 +124,6 @@ restartGameButton.addEventListener("click", restartGame);
  * set the innerText of the englishWord box to the choosen animal
  * remove the choosen animal from the englishWords array so that it does not appear again
  */
-nextAnimal();
 function nextAnimal() {
     let currentAnimal = Math.floor(Math.random() * animalWords.length);
     animalWord.innerText = animalWords[currentAnimal];
