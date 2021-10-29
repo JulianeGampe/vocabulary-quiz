@@ -61,6 +61,11 @@ function runQuiz(quizType) {
         let germanWordNine = document.getElementById("box9");
         germanWordNine.innerText = "Löwe";
 
+        boxes.forEach(box => {
+            box.addEventListener("click", function() {
+                compareAnswer(box);
+            });
+        });
     }
 }
 
@@ -89,13 +94,6 @@ function compareAnswer(box) {
         box.classList.remove("correct", "incorrect");
     }, 1000);    
 }
-
-boxes.forEach(box => {
-    box.addEventListener("click", function() {
-        compareAnswer(box);
-    });
-});
-
 
 /**
  * increase attempts by one each time a germanword box is clicked
