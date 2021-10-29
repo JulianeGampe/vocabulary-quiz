@@ -23,7 +23,10 @@ for(let quizButton of quizButtons) {
 }
 
 /**
- * runs the quiz according to the choosen quiz type
+ * runs the quiz according to the choosen quiz type:
+ * runs the function to display the randomized english word
+ * populates the German words boxes and the english word at the top
+ * calls the compareAnswer function once a german word box is clicked
  */
 function runQuiz(quizType) {
     if(quizType === "animals") {
@@ -65,6 +68,51 @@ function runQuiz(quizType) {
         document.getElementById("box9").setAttribute("data-vocab", "lion");
         let germanWordNine = document.getElementById("box9");
         germanWordNine.innerText = "Löwe";
+
+        boxes.forEach(box => {
+            box.addEventListener("click", function() {
+                compareAnswer(box, quizType);
+            });
+        });
+    } else if(quizType === "travel") {
+
+        nextTravel();
+
+        document.getElementById("box1").setAttribute("data-vocab", "backpack");
+        let germanWordOne = document.getElementById("box1");
+        germanWordOne.innerText = "Rucksack";
+
+        document.getElementById("box2").setAttribute("data-vocab", "suitcase");
+        let germanWordTwo = document.getElementById("box2");
+        germanWordTwo.innerText = "Koffer";
+
+        document.getElementById("box3").setAttribute("data-vocab", "airport");
+        let germanWordThree = document.getElementById("box3");
+        germanWordThree.innerText = "Flughafen";
+
+        document.getElementById("box4").setAttribute("data-vocab", "airplane");
+        let germanWordFour = document.getElementById("box4");
+        germanWordFour.innerText = "Flugzeug";
+
+        document.getElementById("box5").setAttribute("data-vocab", "train");
+        let germanWordFive = document.getElementById("box5");
+        germanWordFive.innerText = "Zug";
+
+        document.getElementById("box6").setAttribute("data-vocab", "main station");
+        let germanWordSix = document.getElementById("box6");
+        germanWordSix.innerText = "Hauptbahnhof";
+
+        document.getElementById("box7").setAttribute("data-vocab", "sight");
+        let germanWordSeven = document.getElementById("box7");
+        germanWordSeven.innerText = "Sehenswürdigkeit";
+
+        document.getElementById("box8").setAttribute("data-vocab", "beach");
+        let germanWordEight = document.getElementById("box8");
+        germanWordEight.innerText = "Strand";
+
+        document.getElementById("box9").setAttribute("data-vocab", "holiday");
+        let germanWordNine = document.getElementById("box9");
+        germanWordNine.innerText = "Urlaub";
 
         boxes.forEach(box => {
             box.addEventListener("click", function() {
