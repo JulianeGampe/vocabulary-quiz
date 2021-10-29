@@ -112,10 +112,7 @@ function compareAnswer(box, quizType) {
  * if clicked set number of attempts to 0
  */
 function restartGame() {
-    counter = 0;
-    counterSpan.innerText = counter;
-    englishWords = animals.slice(0);
-    nextAnimal();
+    location.reload();
 }
 
 restartGameButton.addEventListener("click", restartGame);
