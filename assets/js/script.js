@@ -132,11 +132,29 @@ function runQuiz(quizType) {
 function compareAnswer(box, quizType) {
     if(quizType === "animals") {
 
-        if (animalWord.innerText === box.getAttribute("data-vocab")) {
+        if(animalWord.innerText === box.getAttribute("data-vocab")) {
             calculateAttempts();
             box.classList.add("correct");
             if(animalWords.length > 0) {
                 nextAnimal();
+            } else {
+                win();
+            }
+        } else {
+            calculateAttempts();
+            box.classList.add("incorrect");
+            }
+
+        setTimeout(() => {
+            box.classList.remove("correct", "incorrect");
+        }, 1000);    
+    } else if(quizType === "travel") {
+
+        if (travelWord.innerText === box.getAttribute("data-vocab")) {
+            calculateAttempts();
+            box.classList.add("correct");
+            if(travelWords.length > 0) {
+                nextTravel();
             } else {
                 win();
             }
