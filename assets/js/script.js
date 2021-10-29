@@ -123,15 +123,27 @@ function restartGame() {
 restartGameButton.addEventListener("click", restartGame);
 
 /**
- * choose a random number within the length of the englishWords array to choose a random animal
- * set the innerText of the englishWord box to the choosen animal
- * remove the choosen animal from the englishWords array so that it does not appear again
+ * choose a random number within the length of the animalWords array to choose a random animal
+ * set the innerText of the animalWord box to the choosen animal
+ * remove the choosen animal from the animalWords array so that it does not appear again
  */
 function nextAnimal() {
     let currentAnimal = Math.floor(Math.random() * animalWords.length);
     animalWord.innerText = animalWords[currentAnimal];
     let animalIndex = animalWords.indexOf(animalWords[currentAnimal]);
     animalWords.splice(animalIndex, 1);
+}
+
+/**
+ * choose a random number within the length of the travelWords array to choose a random travel word
+ * set the innerText of the travelWord box to the choosen travel word
+ * remove the choosen travel word from the travelWords array so that it does not appear again
+ */
+ function nextTravel() {
+    let currentTravel = Math.floor(Math.random() * travelWords.length);
+    travelWord.innerText = travelWords[currentTravel];
+    let travelIndex = travelWords.indexOf(travelWords[currentTravel]);
+    travelWords.splice(travelIndex, 1);
 }
 
 /* Modal that displays when the quiz is finished */
