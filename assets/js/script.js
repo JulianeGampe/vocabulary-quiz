@@ -2,12 +2,15 @@
 
 const animals = ["dog", "cat", "fish", "giraffe", "tiger", "lion", "guinea pig", "cheetah", "horse"];
 let animalWords = animals.slice(0);
+let animalWord = document.getElementById("word");
 let counter = 0;
 let counterSpan = document.getElementById("counter");
-let animalWord = document.getElementById("word");
 let boxes = document.querySelectorAll(".box");
 let restartGameButton = document.getElementById("restartgame");
 let modalText = document.getElementById("winningtext");
+const travel = ["backpack", "suitcase", "airport", "airplane", "train", "main station", "sight", "beach", "holiday"];
+let travelWords = travel.slice(0);
+let travelWord = document.getElementById("word");
 
 
 // Event listener for quiz buttons
