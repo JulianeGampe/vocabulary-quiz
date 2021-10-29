@@ -9,6 +9,18 @@ let boxes = document.querySelectorAll(".box");
 let restartGameButton = document.getElementById("restartgame");
 let modalText = document.getElementById("winningtext");
 
+
+// Event listener for quiz buttons
+let quizButtons = document.getElementsByClassName("quiztype");
+for(let quizButton of quizButtons) {
+    quizButton.addEventListener("click", function() {
+        let quizType = this.getAttribute("data-quiz");
+        runQuiz(quizType);
+    })
+}
+
+
+
 document.getElementById("box1").setAttribute("data-vocab", "horse");
 let germanWordOne = document.getElementById("box1");
 germanWordOne.innerText = "Pferd";
