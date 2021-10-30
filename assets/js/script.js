@@ -11,7 +11,9 @@ let modalText = document.getElementById("winningtext");
 const travel = ["backpack", "suitcase", "airport", "airplane", "train", "main station", "sight", "beach", "holiday"];
 let travelWords = travel.slice(0);
 let travelWord = document.getElementById("word");
-
+const food = ["strawberry", "milk", "egg", "bread", "soup", "apple", "cookie", "pineapple", "cake"];
+let foodWords = food.slice(0);
+let foodWord = document.getElementById("word");
 
 // Event listener for quiz buttons
 let quizButtons = document.getElementsByClassName("quiztype");
