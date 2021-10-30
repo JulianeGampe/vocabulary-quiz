@@ -213,6 +213,24 @@ function compareAnswer(box, quizType) {
         setTimeout(() => {
             box.classList.remove("correct", "incorrect");
         }, 1000);    
+    } else if(quizType === "food") {
+
+        if (foodWord.innerText === box.getAttribute("data-vocab")) {
+            calculateAttempts();
+            box.classList.add("correct");
+            if(foodWords.length > 0) {
+                nextFood();
+            } else {
+                win();
+            }
+        } else {
+            calculateAttempts();
+            box.classList.add("incorrect");
+            }
+
+        setTimeout(() => {
+            box.classList.remove("correct", "incorrect");
+        }, 1000);    
     }
 }
 
