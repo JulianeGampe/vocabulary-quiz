@@ -19,6 +19,11 @@ let foodWord = document.getElementById("word");
 let quizButtons = document.getElementsByClassName("quiztype");
 for(let quizButton of quizButtons) {
     quizButton.addEventListener("click", function() {
+        counter = 0;
+        counterSpan.innerText = counter;
+        animalWords = animals.slice(0);
+        travelWords = travel.slice(0);
+        foodWords = food.slice(0);
         let quizType = this.getAttribute("data-quiz");
         runQuiz(quizType);
     })
