@@ -121,6 +121,51 @@ function runQuiz(quizType) {
                 compareAnswer(box, quizType);
             });
         });
+    } else if(quizType === "food") {
+
+        nextFood();
+
+        document.getElementById("box1").setAttribute("data-vocab", "strawberry");
+        let germanWordOne = document.getElementById("box1");
+        germanWordOne.innerText = "Erdbeere";
+
+        document.getElementById("box2").setAttribute("data-vocab", "milk");
+        let germanWordTwo = document.getElementById("box2");
+        germanWordTwo.innerText = "Milch";
+
+        document.getElementById("box3").setAttribute("data-vocab", "egg");
+        let germanWordThree = document.getElementById("box3");
+        germanWordThree.innerText = "Ei";
+
+        document.getElementById("box4").setAttribute("data-vocab", "bread");
+        let germanWordFour = document.getElementById("box4");
+        germanWordFour.innerText = "Brot";
+
+        document.getElementById("box5").setAttribute("data-vocab", "soup");
+        let germanWordFive = document.getElementById("box5");
+        germanWordFive.innerText = "Suppe";
+
+        document.getElementById("box6").setAttribute("data-vocab", "apple");
+        let germanWordSix = document.getElementById("box6");
+        germanWordSix.innerText = "Apfel";
+
+        document.getElementById("box7").setAttribute("data-vocab", "cookie");
+        let germanWordSeven = document.getElementById("box7");
+        germanWordSeven.innerText = "Keks";
+
+        document.getElementById("box8").setAttribute("data-vocab", "pineapple");
+        let germanWordEight = document.getElementById("box8");
+        germanWordEight.innerText = "Ananas";
+
+        document.getElementById("box9").setAttribute("data-vocab", "cake");
+        let germanWordNine = document.getElementById("box9");
+        germanWordNine.innerText = "Kuchen";
+
+        boxes.forEach(box => {
+            box.addEventListener("click", function() {
+                compareAnswer(box, quizType);
+            });
+        });
     }
 }
 
