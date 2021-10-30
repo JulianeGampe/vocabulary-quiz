@@ -214,6 +214,18 @@ function nextAnimal() {
     travelWords.splice(travelIndex, 1);
 }
 
+/**
+ * choose a random number within the length of the foodWords array to choose a random food word
+ * set the innerText of the foodWord box to the choosen food word
+ * remove the choosen food word from the foodWords array so that it does not appear again
+ */
+ function nextFood() {
+    let currentFood = Math.floor(Math.random() * travelWords.length);
+    foodWord.innerText = foodWords[currentFood];
+    let foodIndex = foodWords.indexOf(foodWords[currentFood]);
+    foodWords.splice(foodIndex, 1);
+}
+
 /* Modal that displays when the quiz is finished */
 /* code taken from w3schools.com/howto/howto_css_modal.asp */
 let modal = document.getElementById("winModal");
