@@ -283,7 +283,7 @@ function nextAnimal() {
  * remove the choosen food word from the foodWords array so that it does not appear again
  */
  function nextFood() {
-    let currentFood = Math.floor(Math.random() * travelWords.length);
+    let currentFood = Math.floor(Math.random() * foodWords.length);
     foodWord.innerText = foodWords[currentFood];
     let foodIndex = foodWords.indexOf(foodWords[currentFood]);
     foodWords.splice(foodIndex, 1);
