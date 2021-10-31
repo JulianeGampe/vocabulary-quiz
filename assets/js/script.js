@@ -2,7 +2,7 @@
 
 const animals = ["dog", "cat", "fish", "giraffe", "tiger", "lion", "guinea pig", "cheetah", "horse"];
 let animalWords = animals.slice(0);
-let animalWord = document.getElementById("word");
+let animalWord;
 let counter = 0;
 let counterSpan = document.getElementById("counter");
 let boxes = document.querySelectorAll(".box");
@@ -10,10 +10,11 @@ let restartGameButton = document.getElementById("restartgame");
 let modalText = document.getElementById("winningtext");
 const travel = ["backpack", "suitcase", "airport", "airplane", "train", "main station", "sight", "beach", "holiday"];
 let travelWords = travel.slice(0);
-let travelWord = document.getElementById("word");
+let travelWord;
 const food = ["strawberry", "milk", "egg", "bread", "soup", "apple", "cookie", "pineapple", "cake"];
 let foodWords = food.slice(0);
-let foodWord = document.getElementById("word");
+let foodWord;
+let wordToGuess = document.getElementById("word");
 
 // Event listener for quiz buttons
 let quizButtons = document.getElementsByClassName("quiztype");
@@ -37,7 +38,7 @@ for(let quizButton of quizButtons) {
  */
 function runQuiz(quizType) {
     if(quizType === "animals") {
-
+        animalWord = wordToGuess;
         nextAnimal();
 
         document.getElementById("box1").setAttribute("data-vocab", "horse");
@@ -82,7 +83,7 @@ function runQuiz(quizType) {
             });
         });
     } else if(quizType === "travel") {
-
+        travelWord = wordToGuess;
         nextTravel();
 
         document.getElementById("box1").setAttribute("data-vocab", "backpack");
@@ -127,7 +128,7 @@ function runQuiz(quizType) {
             });
         });
     } else if(quizType === "food") {
-
+        foodWord = wordToGuess;
         nextFood();
 
         document.getElementById("box1").setAttribute("data-vocab", "strawberry");
