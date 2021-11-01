@@ -15,6 +15,8 @@ const food = ["strawberry", "milk", "egg", "bread", "soup", "apple", "cookie", "
 let foodWords = food.slice(0);
 let foodWord;
 let wordToGuess = document.getElementById("word");
+let englishWords;
+let englishWord;
 
 // Event listener for quiz buttons
 let quizButtons = document.getElementsByClassName("quiztype");
@@ -47,7 +49,7 @@ function runQuiz(quizType) {
         animalWord = wordToGuess;
         foodWord = null;
         travelWord = null;
-        nextAnimal();
+        nextWord(animals);
 
         document.getElementById("box1").setAttribute("data-vocab", "horse");
         let germanWordOne = document.getElementById("box1");
@@ -89,7 +91,7 @@ function runQuiz(quizType) {
         travelWord = wordToGuess;
         animalWord = null;
         foodWord = null;
-        nextTravel();
+        nextWord(travel);
 
         document.getElementById("box1").setAttribute("data-vocab", "backpack");
         let germanWordOne = document.getElementById("box1");
@@ -131,7 +133,7 @@ function runQuiz(quizType) {
         foodWord = wordToGuess;
         travelWord = null;
         animalWord = null;
-        nextFood();
+        nextWord(food);
 
         document.getElementById("box1").setAttribute("data-vocab", "strawberry");
         let germanWordOne = document.getElementById("box1");
@@ -189,7 +191,7 @@ function compareAnswer(box, quizType) {
         if (animalWord.innerText === box.getAttribute("data-vocab")) {
             box.classList.add("correct");
             if (animalWords.length > 0) {
-                nextAnimal();
+                nextWord(animals);
             } else {
                 win();
             }
@@ -206,7 +208,7 @@ function compareAnswer(box, quizType) {
         if (travelWord.innerText === box.getAttribute("data-vocab")) {
             box.classList.add("correct");
             if (travelWords.length > 0) {
-                nextTravel();
+                nextWord(travel);
             } else {
                 win();
             }
@@ -223,7 +225,7 @@ function compareAnswer(box, quizType) {
         if (foodWord.innerText === box.getAttribute("data-vocab")) {
             box.classList.add("correct");
             if (foodWords.length > 0) {
-                nextFood();
+                nextWord(food);
             } else {
                 win();
             }
@@ -258,39 +260,27 @@ function restartGame() {
 restartGameButton.addEventListener("click", restartGame);
 
 /**
- * choose a random number within the length of the animalWords array to choose a random animal
- * set the innerText of the animalWord box to the choosen animal
- * remove the choosen animal from the animalWords array so that it does not appear again
+ * set englishWords and englishWord according to gameType
+ * choose a random number within the length of the englishWords array to choose a random english word
+ * set the innerText of the englishWord box to the choosen english word
+ * remove the choosen english word from the englishWords array so that it does not appear again
  */
-function nextAnimal() {
-    let currentAnimal = Math.floor(Math.random() * animalWords.length);
-    animalWord.innerText = animalWords[currentAnimal];
-    let animalIndex = animalWords.indexOf(animalWords[currentAnimal]);
-    animalWords.splice(animalIndex, 1);
-}
+function nextWord(quizType) {
+    if (quizType === animals) {
+        englishWords = animalWords;
+        englishWord = animalWord;
+    } else if (quizType === travel) {
+        englishWords = travelWords;
+        englishWord = travelWord;
+    } else if (quizType === food) {
+        englishWords = foodWords;
+        englishWord = foodWord;
+    }
 
-/**
- * choose a random number within the length of the travelWords array to choose a random travel word
- * set the innerText of the travelWord box to the choosen travel word
- * remove the choosen travel word from the travelWords array so that it does not appear again
- */
-function nextTravel() {
-    let currentTravel = Math.floor(Math.random() * travelWords.length);
-    travelWord.innerText = travelWords[currentTravel];
-    let travelIndex = travelWords.indexOf(travelWords[currentTravel]);
-    travelWords.splice(travelIndex, 1);
-}
-
-/**
- * choose a random number within the length of the foodWords array to choose a random food word
- * set the innerText of the foodWord box to the choosen food word
- * remove the choosen food word from the foodWords array so that it does not appear again
- */
-function nextFood() {
-    let currentFood = Math.floor(Math.random() * foodWords.length);
-    foodWord.innerText = foodWords[currentFood];
-    let foodIndex = foodWords.indexOf(foodWords[currentFood]);
-    foodWords.splice(foodIndex, 1);
+    let currentWord = Math.floor(Math.random() * englishWords.length);
+    englishWord.innerText = englishWords[currentWord];
+    let englishIndex = englishWords.indexOf(englishWords[currentWord]);
+    englishWords.splice(englishIndex, 1);
 }
 
 /* Modal that displays when the quiz is finished */
