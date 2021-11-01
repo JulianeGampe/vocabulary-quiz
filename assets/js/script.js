@@ -18,8 +18,8 @@ let wordToGuess = document.getElementById("word");
 
 // Event listener for quiz buttons
 let quizButtons = document.getElementsByClassName("quiztype");
-for(let quizButton of quizButtons) {
-    quizButton.addEventListener("click", function() {
+for (let quizButton of quizButtons) {
+    quizButton.addEventListener("click", function () {
         counter = 0;
         counterSpan.innerText = counter;
         animalWords = animals.slice(0);
@@ -27,7 +27,13 @@ for(let quizButton of quizButtons) {
         foodWords = food.slice(0);
         let quizType = this.getAttribute("data-quiz");
         runQuiz(quizType);
-    })
+
+        boxes.forEach(box => {
+            box.addEventListener("click", function () {
+                compareAnswer(box, quizType);
+            });
+        });
+    });
 }
 
 /**
@@ -37,8 +43,10 @@ for(let quizButton of quizButtons) {
  * calls the compareAnswer function once a german word box is clicked
  */
 function runQuiz(quizType) {
-    if(quizType === "animals") {
+    if (quizType === "animals") {
         animalWord = wordToGuess;
+        foodWord = null;
+        travelWord = null;
         nextAnimal();
 
         document.getElementById("box1").setAttribute("data-vocab", "horse");
@@ -77,13 +85,10 @@ function runQuiz(quizType) {
         let germanWordNine = document.getElementById("box9");
         germanWordNine.innerText = "Löwe";
 
-        boxes.forEach(box => {
-            box.addEventListener("click", function() {
-                compareAnswer(box, quizType);
-            });
-        });
-    } else if(quizType === "travel") {
+    } else if (quizType === "travel") {
         travelWord = wordToGuess;
+        animalWord = null;
+        foodWord = null;
         nextTravel();
 
         document.getElementById("box1").setAttribute("data-vocab", "backpack");
@@ -122,13 +127,10 @@ function runQuiz(quizType) {
         let germanWordNine = document.getElementById("box9");
         germanWordNine.innerText = "Urlaub";
 
-        boxes.forEach(box => {
-            box.addEventListener("click", function() {
-                compareAnswer(box, quizType);
-            });
-        });
-    } else if(quizType === "food") {
+    } else if (quizType === "food") {
         foodWord = wordToGuess;
+        travelWord = null;
+        animalWord = null;
         nextFood();
 
         document.getElementById("box1").setAttribute("data-vocab", "strawberry");
@@ -167,13 +169,10 @@ function runQuiz(quizType) {
         let germanWordNine = document.getElementById("box9");
         germanWordNine.innerText = "Kuchen";
 
-        boxes.forEach(box => {
-            box.addEventListener("click", function() {
-                compareAnswer(box, quizType);
-            });
-        });
     }
 }
+
+
 
 /**
  * compare function
@@ -183,68 +182,67 @@ function runQuiz(quizType) {
  * alert after all nine words are found
  */
 function compareAnswer(box, quizType) {
-    if(quizType === "animals") {
-
-        if(animalWord.innerText === box.getAttribute("data-vocab")) {
-            calculateAttempts();
+    if (quizType === "animals") {
+        if (animalWord === null) {
+            return;
+        }
+        if (animalWord.innerText === box.getAttribute("data-vocab")) {
             box.classList.add("correct");
-            if(animalWords.length > 0) {
+            if (animalWords.length > 0) {
                 nextAnimal();
             } else {
                 win();
             }
         } else {
-            calculateAttempts();
             box.classList.add("incorrect");
-            }
-
+        }
         setTimeout(() => {
             box.classList.remove("correct", "incorrect");
-        }, 1000);    
-    } else if(quizType === "travel") {
-
+        }, 1000);
+    } else if (quizType === "travel") {
+        if (travelWord === null) {
+            return;
+        }
         if (travelWord.innerText === box.getAttribute("data-vocab")) {
-            calculateAttempts();
             box.classList.add("correct");
-            if(travelWords.length > 0) {
+            if (travelWords.length > 0) {
                 nextTravel();
             } else {
                 win();
             }
         } else {
-            calculateAttempts();
             box.classList.add("incorrect");
-            }
-
+        }
         setTimeout(() => {
             box.classList.remove("correct", "incorrect");
-        }, 1000);    
-    } else if(quizType === "food") {
-
+        }, 1000);
+    } else if (quizType === "food") {
+        if (foodWord === null) {
+            return;
+        }
         if (foodWord.innerText === box.getAttribute("data-vocab")) {
-            calculateAttempts();
             box.classList.add("correct");
-            if(foodWords.length > 0) {
+            if (foodWords.length > 0) {
                 nextFood();
             } else {
                 win();
             }
         } else {
-            calculateAttempts();
             box.classList.add("incorrect");
-            }
-
+        }
+        
         setTimeout(() => {
             box.classList.remove("correct", "incorrect");
-        }, 1000);    
+        }, 1000);
     }
+    calculateAttempts();
 }
 
 /**
  * increase attempts by one each time a germanword box is clicked
  */
- function calculateAttempts () {
-    counter++;
+function calculateAttempts() {
+    counter = counter + 1;
     counterSpan.innerText = counter;
 }
 
@@ -276,7 +274,7 @@ function nextAnimal() {
  * set the innerText of the travelWord box to the choosen travel word
  * remove the choosen travel word from the travelWords array so that it does not appear again
  */
- function nextTravel() {
+function nextTravel() {
     let currentTravel = Math.floor(Math.random() * travelWords.length);
     travelWord.innerText = travelWords[currentTravel];
     let travelIndex = travelWords.indexOf(travelWords[currentTravel]);
@@ -288,7 +286,7 @@ function nextAnimal() {
  * set the innerText of the foodWord box to the choosen food word
  * remove the choosen food word from the foodWords array so that it does not appear again
  */
- function nextFood() {
+function nextFood() {
     let currentFood = Math.floor(Math.random() * foodWords.length);
     foodWord.innerText = foodWords[currentFood];
     let foodIndex = foodWords.indexOf(foodWords[currentFood]);
@@ -306,14 +304,14 @@ function win() {
 }
 
 /* when the user clicks the modal close button */
-closeButton.addEventListener("click", function() {
+closeButton.addEventListener("click", function () {
     modal.style.display = "none";
     restartGame();
 })
 
 /* when the user clicks outside of the modal it closes */
-window.addEventListener("click", function(event) {
-    if(event.target == modal) {
+window.addEventListener("click", function (event) {
+    if (event.target == modal) {
         modal.style.display = "none";
         restartGame();
     }
