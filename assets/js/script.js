@@ -19,19 +19,17 @@ let englishWords;
 let englishWord;
 let quizType;
 
-// Event listener for quiz buttons
-let quizButtons = document.getElementsByClassName("quiztype");
-for (let quizButton of quizButtons) {
+// event listener for quiz buttons
+let quizButtons = document.querySelectorAll(".quiztype");
+quizButtons.forEach(quizButton => {
     quizButton.addEventListener("click", function () {
-        counter = 0;
-        counterSpan.innerText = counter;
-        animalWords = animals.slice(0);
-        travelWords = travel.slice(0);
-        foodWords = food.slice(0);
-        let quizType = this.getAttribute("data-quiz");
-        runQuiz(quizType);
+        quizType = this.getAttribute("data-quiz");
+        generateQuiz(quizType);
+        boxes.forEach(box => {
+            box.classList.remove("disable");
+        });
     });
-}
+});
 
 /**
  * set the counter back to 0 and display the counter
