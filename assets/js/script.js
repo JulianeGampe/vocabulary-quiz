@@ -232,61 +232,118 @@ function runQuiz(quizType) {
  * alert after all nine words are found
  */
 function compareAnswer(box, quizType) {
-    if (quizType === "animals") {
-        if (animalWord === null) {
-            return;
-        }
-        if (animalWord.innerText === box.getAttribute("data-vocab")) {
-            box.classList.add("correct");
-            if (animalWords.length > 0) {
-                nextWord(animals);
+    switch (quizType) {
+        case "animals":
+            if (animalWord.innerText === box.getAttribute("data-vocab")) {
+                calculateAttempts();
+                box.classList.add("correct");
+                if (animalWords.length > 0) {
+                    nextWord(animals);
+                } else {
+                    win();
+                }
             } else {
-                win();
+                calculateAttempts();
+                box.classList.add("incorrect");
             }
-        } else {
-            box.classList.add("incorrect");
-        }
-        setTimeout(() => {
-            box.classList.remove("correct", "incorrect");
-        }, 1000);
-    } else if (quizType === "travel") {
-        if (travelWord === null) {
-            return;
-        }
-        if (travelWord.innerText === box.getAttribute("data-vocab")) {
-            box.classList.add("correct");
-            if (travelWords.length > 0) {
-                nextWord(travel);
-            } else {
-                win();
-            }
-        } else {
-            box.classList.add("incorrect");
-        }
-        setTimeout(() => {
-            box.classList.remove("correct", "incorrect");
-        }, 1000);
-    } else if (quizType === "food") {
-        if (foodWord === null) {
-            return;
-        }
-        if (foodWord.innerText === box.getAttribute("data-vocab")) {
-            box.classList.add("correct");
-            if (foodWords.length > 0) {
-                nextWord(food);
-            } else {
-                win();
-            }
-        } else {
-            box.classList.add("incorrect");
-        }
+            setTimeout(() => {
+                box.classList.remove("correct", "incorrect");
+            }, 1000);
+            break;
         
-        setTimeout(() => {
-            box.classList.remove("correct", "incorrect");
-        }, 1000);
+        case "travel":
+            if (travelWord.innerText === box.getAttribute("data-vocab")) {
+                calculateAttempts();
+                box.classList.add("correct");
+                if (travelWords.length > 0) {
+                    nextWord(travel);
+                } else {
+                    win();
+                }
+            } else {
+                calculateAttempts();
+                box.classList.add("incorrect");
+            }
+            setTimeout(() => {
+                box.classList.remove("correct", "incorrect");
+            }, 1000);
+            break;
+        
+        case "food":
+            if (foodWord.innerText === box.getAttribute("data-vocab")) {
+                calculateAttempts();
+                box.classList.add("correct");
+                if (foodWords.length > 0) {
+                    nextWord(food);
+                } else {
+                    win();
+                }
+            } else {
+                calculateAttempts();
+                box.classList.add("incorrect");
+            }
+            setTimeout(() => {
+                box.classList.remove("correct", "incorrect");
+            }, 1000);
+            break;
     }
-    calculateAttempts();
 }
+
+//     if (quizType === "animals") {
+//         if (animalWord === null) {
+//             return;
+//         }
+//         if (animalWord.innerText === box.getAttribute("data-vocab")) {
+//             box.classList.add("correct");
+//             if (animalWords.length > 0) {
+//                 nextWord(animals);
+//             } else {
+//                 win();
+//             }
+//         } else {
+//             box.classList.add("incorrect");
+//         }
+//         setTimeout(() => {
+//             box.classList.remove("correct", "incorrect");
+//         }, 1000);
+//     } else if (quizType === "travel") {
+//         if (travelWord === null) {
+//             return;
+//         }
+//         if (travelWord.innerText === box.getAttribute("data-vocab")) {
+//             box.classList.add("correct");
+//             if (travelWords.length > 0) {
+//                 nextWord(travel);
+//             } else {
+//                 win();
+//             }
+//         } else {
+//             box.classList.add("incorrect");
+//         }
+//         setTimeout(() => {
+//             box.classList.remove("correct", "incorrect");
+//         }, 1000);
+//     } else if (quizType === "food") {
+//         if (foodWord === null) {
+//             return;
+//         }
+//         if (foodWord.innerText === box.getAttribute("data-vocab")) {
+//             box.classList.add("correct");
+//             if (foodWords.length > 0) {
+//                 nextWord(food);
+//             } else {
+//                 win();
+//             }
+//         } else {
+//             box.classList.add("incorrect");
+//         }
+        
+//         setTimeout(() => {
+//             box.classList.remove("correct", "incorrect");
+//         }, 1000);
+//     }
+//     calculateAttempts();
+// }
 
 /**
  * increase attempts by one each time a germanword box is clicked
