@@ -40,6 +40,20 @@ for (let quizButton of quizButtons) {
 }
 
 /**
+ * set the counter back to 0 and display the counter
+ * select all elements of the arrays
+ * call the runQuiz function
+ */
+function generateQuiz(quizType) {
+    counter = 0;
+    counterSpan.innerText = counter;
+    animalWords = animals.slice(0);
+    travelWords = travel.slice(0);
+    foodWords = food.slice(0);
+    runQuiz(quizType);
+}
+
+/**
  * runs the quiz according to the choosen quiz type:
  * runs the function to display the randomized english word
  * populates the German words boxes and the english word at the top
