@@ -30,12 +30,6 @@ for (let quizButton of quizButtons) {
         foodWords = food.slice(0);
         let quizType = this.getAttribute("data-quiz");
         runQuiz(quizType);
-
-        boxes.forEach(box => {
-            box.addEventListener("click", function () {
-                compareAnswer(box, quizType);
-            });
-        });
     });
 }
 
@@ -52,6 +46,13 @@ function generateQuiz(quizType) {
     foodWords = food.slice(0);
     runQuiz(quizType);
 }
+
+// event listeners for each German word box
+boxes.forEach(box => {
+    box.addEventListener("click", function () {
+        compareAnswer(box, quizType);
+    });
+});
 
 /**
  * runs the quiz according to the choosen quiz type:
