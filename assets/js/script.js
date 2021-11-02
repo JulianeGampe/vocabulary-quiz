@@ -17,6 +17,7 @@ let foodWord;
 let wordToGuess = document.getElementById("word");
 let englishWords;
 let englishWord;
+let quizType;
 
 // Event listener for quiz buttons
 let quizButtons = document.getElementsByClassName("quiztype");
