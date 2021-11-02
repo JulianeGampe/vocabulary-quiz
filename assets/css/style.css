@@ -116,6 +116,21 @@ footer a {
     grid-row: 2;
 }
 
+/* choose quiz type buttons style */
+.quiztype {
+    background-color: #553fa3;
+    color: #fff;
+    font-family: Cabin, sans-serif;
+    font-size: 1.1rem;
+    margin: 5px 15px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.quiztype:hover {
+    background-color: #201773;
+}
+
 /* german words grid */
 
 #germanwords {
@@ -171,7 +186,7 @@ footer a {
     padding: 20px;
 }
 
-/* box style */
+/* german words box style */
 .box:not(#box9) {
     margin: 5px;
     padding: 20px;
