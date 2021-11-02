@@ -312,7 +312,7 @@ function nextWord(quizType) {
     }
 
     let currentWord = Math.floor(Math.random() * englishWords.length);
-    englishWord.innerText = englishWords[currentWord];
+    englishWord.innerText = englishWords[currentWord].en;
     let englishIndex = englishWords.indexOf(englishWords[currentWord]);
     englishWords.splice(englishIndex, 1);
 }
