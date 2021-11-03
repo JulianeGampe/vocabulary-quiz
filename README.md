@@ -126,21 +126,22 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
   - Color accessibility #20173, #553fa3, #000047
   ![Color Tool Test](documentation/screenshots/colortestone.png)
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjulianegampe.github.io%2Fvocabulary-quiz%2F)
+    ![HTML Checker](documentation/screenshots/htmlchecker.png)
+
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulianegampe.github.io%2Fvocabulary-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    ![CSS Validation](documentation/screenshots/cssvalidation.png)
+
+- JavaScript
+  - No errors were found when passing through [JSHint](https://jshint.com/)
+    - script.js
+    ![JavaScript script.js](documentation/screenshots/jshintscript.png)
+    - words.js
+    ![JavaScript words.js](documentation/screenshots/jshintwords.png)
 
 ### Browser Compatibility
 ### Responsiveness
