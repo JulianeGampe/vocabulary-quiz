@@ -214,7 +214,7 @@ function win() {
 closeButton.addEventListener("click", function () {
     modal.style.display = "none";
     restartGame();
-})
+});
 
 /* when the user clicks outside of the modal it closes */
 window.addEventListener("click", function (event) {
@@ -222,4 +222,4 @@ window.addEventListener("click", function (event) {
         modal.style.display = "none";
         restartGame();
     }
-})
+});
