@@ -1,8 +1,8 @@
 # Vocabulary Quiz
 
-Vocabulary Quiz is a language game that will allow the user to test their skills in English and German. The quiz is set up so that the user will find matching word pairs. Motivation is kept up by counting the number of attempts the user needs to find all word pairs. The user can try to find all words with the lowest possible amount of attempts.
+Vocabulary Quiz is a language game that will allow the user to test their skills in English and German. The user can choose a topic by selecting a quiz type. The quiz is set up so that the user will find matching word pairs. Motivation is kept up by counting the number of attempts the user needs to find all word pairs. The user can try to find all words with the lowest possible amount of attempts.
 
-![Responsive Mockup]()
+![Responsive Mockup](documentation/screenshots/amiresponsive.png)
 
 ## User Stories
 
