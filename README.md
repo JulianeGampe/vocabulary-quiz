@@ -43,56 +43,58 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
 
   - The main heading in the header will allow the user to see the purpose of the website.
 
-![Header]()
+![Header](documentation/screenshots/header.png)
 
-- __Quiz explanation__
+- __Quiz Type Buttons__
 
-  - The quiz explantion will guide the user on how to use the Vocabulary Quiz and point out the aim of the quiz.
+  - Three quiz type buttons will allow the user to choose between three different quiz types depending on the topic they would like to test their vocabulary knowledge in. The buttons have appropriate icons to give a visuel cue as well.
 
-![Quiz explanation]()
+![Quiz Type Buttons](documentation/screenshots/quiztype.png)
+
+- __Quiz Explanation__
+
+  - The quiz explanation will guide the user on how to use the Vocabulary Quiz and point out the aim of the quiz.
+
+![Quiz explanation](documentation/screenshots/explanation.png)
 
 - __English Word__
 
   - In the English Word box the user will see the English word for which they have to find the matching German card.
 
-![English Word]()
+![English Word](documentation/screenshots/englishword.png)
 
 - __German Words__
 
   - This section will display nine buttons with nine different German words that the user can click.
-  - If the word is matching the English word, a new English word will appear.
-  - If the word is incorrect the user can try again.
+  - If the word is matching the English word, the box will appear in green and a new English word will appear.
+  - If the word is incorrect the box will appear in red the user can try again.
 
-![German Words]()
+![German Words](documentation/screenshots/germanwords.png)
 
 - __Number of Attempts__ 
 
-  - In this section the user can see the overall number of attempts he has made so far.
+  - In this section the user can see the overall number of attempts they have made so far.
 
-![Attempts]()
+![Attempts](documentation/screenshots/attempts.png)
 
 - __Restart Game__
 
-  - This button will allow the user to restart the game and set the number of attempts to zero. 
+  - This button will allow the user to restart the game and set the number of attempts to zero and reload all words. 
 
-![Restart Game]()
+![Restart Game](documentation/screenshots/restartgame.png)
 
 - __Footer__
 
   - The footer will display a link to social media.
   - The user can click the icon to visit the social media website in a separate tab.
 
-![Footer]()
+![Footer](documentation/screenshots/footer.png)
 
 ### Features Left to Implement
 
-__Quizes for different topics__
+- __Quizes for different languages__
 
-- A feature that allows the user to choose a specific topic for which they want to practice new words.
-
-__Quizes for different languages__
-
- - A feature that allow the user to choose a different language that they want to take the quiz for.
+  - A feature that allows the user to choose a different language, for which they would like to take the quiz.
 
 ## Technologies Used
 
