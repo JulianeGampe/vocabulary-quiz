@@ -25,7 +25,7 @@ Vocabulary Quiz is a language game that will allow the user to test their skills
 
 Google Fonts has been used to find the font, that is displayed on the website. [Cabin](https://fonts.google.com/specimen/Cabin?category=Sans+Serif&preview.text=Vocabulary%20Quiz&preview.text_type=custom#standard-styles) is described as having a touch of modernism as well as having a wide language support including all Western, Central and South/Eastern European languages, which was found suitable for a vocabulary language quiz.
 
-To provide visual cues the link to Instagram in the footer is represented by an icon from [Font Awesome](https://fontawesome.com/v5.15/icons/instagram?style=brands)
+To provide visual cues icons from [Font Awesome](https://fontawesome.com/) have been used in the quiz type buttons and for the icon that links to Instagram.
 
 ### Wireframes
 
