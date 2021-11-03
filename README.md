@@ -101,6 +101,8 @@ __Quizes for different languages__
 - [Gitpod](https://www.gitpod.io/) was used for the development of the website.
 - [Github](https://github.com/) was used to store the code online.
 - Git was used for version control.
+- [hatchful](https://hatchful.shopify.com/) was used for the favicon.
+- [Font Awesome](https://fontawesome.com/) was used for the icons.
 
 
 ## Testing 
@@ -168,9 +170,13 @@ You can break the credits section up into Content and Media, depending on what y
   - [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer)
 - The font was found on [Google Fonts](https://fonts.google.com/)
   - [Cabin](https://fonts.google.com/specimen/Cabin?category=Sans+Serif&preview.text=Vocabulary%20Quiz&preview.text_type=custom#standard-styles)
-- The icon in the footer was taken from [Font Awesome](https://fontawesome.com/)
+- The icons in the quiz type buttons and footer were taken from [Font Awesome](https://fontawesome.com/)
+  - [Animals Icon](https://fontawesome.com/v5.15/icons/paw?style=solid)
+  - [Travel Icon](https://fontawesome.com/v5.15/icons/bus-alt?style=solid)
+  - [Food Icon](https://fontawesome.com/v5.15/icons/utensils?style=solid)
   - [Instagram Icon](https://fontawesome.com/v5.15/icons/instagram?style=brands)
-- [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes. 
+- [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes.
+- [hatchful](https://hatchful.shopify.com/) was used for the favicon. 
 - Code for the Modal has been taken from [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 
 
