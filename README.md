@@ -17,7 +17,9 @@ Vocabulary Quiz is a language game that will allow the user to test their skills
 ## UX
 ### Colour Scheme
 
-[Color Tool](https://material.io/resources/color/#!/?view.left=1&view.right=1&primary.color=201773) and [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) have been used to find the colors. #201773 is used as the main color and as the background color for header and footer. #000047 is used when hovering over the buttons. To make sure it contrasts well with the background color #fff all colors were tested in a contrast checker.
+[Color Tool](https://material.io/resources/color/#!/?view.left=1&view.right=1&primary.color=201773) and [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) have been used to find and test the colors. #201773 is used as the main color and as the background color for header and footer. The lighter color #553fa3 is used for the quiz type buttons. #201773 is used again when hovering over the quiz type buttons. #000047 is used when hovering over the german words buttons. To make sure these three colors contrast well with the color #fff, which is used a background and font color respectively, all colors were tested in a contrast checker.
+
+![Color Tool](documentation/screenshots/colortestone.png)
 
 ### Typography 
 
@@ -110,11 +112,17 @@ __Quizes for different languages__
 
 - All colors have been tested with a contrast checker.
 
-  ![Color Tool Test](documentation/screenshots/colortestone.png)
-
+  - Contrast test #201773 against #ffffff
   ![Adobe Color Test](documentation/screenshots/colortesttwo.png)
 
+  - Contrast test #553fa3 against #ffffff
   ![Adobe Color Test](documentation/screenshots/colortestthree.png)
+
+  - Contrast test #000047 against #ffffff
+  ![Adobe Color Test](documentation/screenshots/colortestfour.png)
+
+  - Color accessibility #20173, #553fa3, #000047
+  ![Color Tool Test](documentation/screenshots/colortestone.png)
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
