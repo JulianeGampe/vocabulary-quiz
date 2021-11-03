@@ -7,6 +7,7 @@ Vocabulary Quiz is a language game that will allow the user to test their skills
 ## User Stories
 
 - As a user I want to be able to see the purpose of the website.
+- As a user I want to be able to choose a quiz type so that I can test my knowledge for a specific vocabulary topic.
 - As a user I want to see instructions for the quiz so that I know how to play it.
 - As a user I want to be able to click a German language card matching to the given English word so that I can test my knowledge. 
 - As a user I want to see how many attempts I have needed to complete the quiz so that I can try to improve.
@@ -134,6 +135,28 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Browser Compatibility
 ### Responsiveness
 ### Testing User Stories
+
+- As a user I want to be able to see the purpose of the website.
+![Header](documentation/screenshots/header.png)
+
+- As a user I want to be able to choose a quiz type so that I can test my knowledge for a specific vocabulary topic.
+![Quiztype](documentation/screenshots/quiztype.png)
+
+- As a user I want to see instructions for the quiz so that I know how to play it.
+![Explanation](documentation/screenshots/explanation.png)
+
+- As a user I want to be able to click a German language card matching to the given English word so that I can test my knowledge. 
+![English Word](documentation/screenshots/englishword.png)
+![German Words](documentation/screenshots/germanwords.png)
+
+- As a user I want to see how many attempts I have needed to complete the quiz so that I can try to improve.
+![Attempts](documentation/screenshots/attempts.png)
+
+- As a user I want to be able to restart the game so that I don't have to finish it completely before starting again.
+![Restart Game](documentation/screenshots/restartgame.png)
+
+- As a user I want to see social media icons so that I can visit social media websites with one click.
+![Footer](documentation/screenshots/footer.png)
 
 ### Unfixed Bugs
 
