@@ -144,6 +144,21 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
     ![JavaScript words.js](documentation/screenshots/jshintwords.png)
 
 ### Browser Compatibility
+
+- The page has been tested and works in different browsers.
+
+  - Google Chrome
+  ![Google Chrome Desktop](documentation/screenshots/googlechrome.png)
+  ![Google Chrome Mobile](documentation/screenshots/googlechromemobile.png)
+
+  - Firefox
+  ![Firefox Desktop](documentation/screenshots/firefox.png)
+  ![Firefox Tablet](documentation/screenshots/firefoxtablet.png)
+
+  - Microsoft Edge
+  ![Microsof Edge Desktop](documentation/screenshots/microsoftedge.png)
+  ![Microsof Edge Mobile](documentation/screenshots/microsoftedgemobile.png)
+
 ### Responsiveness
 ### Testing User Stories
 
