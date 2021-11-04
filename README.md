@@ -160,6 +160,35 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
   ![Microsof Edge Mobile](documentation/screenshots/microsoftedgemobile.png)
 
 ### Responsiveness
+
+- The project is responsive and functions on all standard screen sizes using the devtools device bar.
+- All features are readable and easy to understand.
+- The game is fully functional and working. The quiz type buttons are working and a quiz type can be choosen. The German words cards are working and compared with the English word when clicked. The number of attempts are counted correctly. The restart game button is working. A modal is displaying when the game is finished.
+
+    - Google Chrome Desktop
+
+      ![Google Chrome Desktop](documentation/screenshots/googlechrome.png)
+
+    - Google Chrome Mobile
+
+      ![Google Chrome Mobile](documentation/screenshots/googlechromemobile.png)
+
+    - Firefox Desktop
+
+      ![Firefox Desktop](documentation/screenshots/firefox.png)
+
+    - Firefox Tablet
+
+      ![Firefox Tablet](documentation/screenshots/firefoxtablet.png)
+
+    - Microsoft Edge Desktop
+
+      ![Microsof Edge Desktop](documentation/screenshots/microsoftedge.png)
+
+    - Microsoft Edge Mobile
+
+      ![Microsof Edge Mobile](documentation/screenshots/microsoftedgemobile.png)
+
 ### Testing User Stories
 
 - As a user I want to be able to see the purpose of the website.
