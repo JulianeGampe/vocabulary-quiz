@@ -213,9 +213,9 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
 - As a user I want to see social media icons so that I can visit social media websites with one click.
 ![Footer](documentation/screenshots/footer.png)
 
-### Unfixed Bugs
+### Fixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+- When choosing a quiz type and then clicking on a different quiz type the number of attempts would     increment by two. When clicking on yet another quiz type it would increment by three and so forth. The reason for this was, that the calculateAttempts function, that increments the counter by one, was called for each German word box click event inside of each quiz button selection. If one quiz type was clicked it would increment and it would continue to increment even when another quiz type was clicked. This bug was solved by moving the click event listener for the German word boxes outside of the quizbutton selection and put on its own. 
 
 ## Deployment
 
@@ -237,10 +237,6 @@ Alternatively, if you use Gitpod, you can [click here](https://gitpod.io/#https:
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
 - The following websites were used to find the colors and do the contrast tests:
@@ -256,29 +252,4 @@ You can break the credits section up into Content and Media, depending on what y
 - [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes.
 - [hatchful](https://hatchful.shopify.com/) was used for the favicon. 
 - Code for the Modal has been taken from [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
-
-
-### Media
-
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
+- [Am I responsive](http://ami.responsivedesign.is/) has been used to create the responsive mockup of the project
