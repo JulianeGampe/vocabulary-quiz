@@ -115,7 +115,7 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
 
 ## Testing
 
-Due to the lenghts of testing, you can see all tests in the [TESTING.md](TESTING.md) file.
+Due to the length of testing, you can see all tests in the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
