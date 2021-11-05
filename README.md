@@ -92,9 +92,13 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
 
 ### Features Left to Implement
 
-- __Quizes for different languages__
+- __Quizes for Different Languages__
 
   - A feature that allows the user to choose a different language, for which they would like to take the quiz.
+
+- __Different Quiz Categories__
+
+  - Incorporate different quiz categories like months, days of the week and colors.
 
 ## Technologies Used
 
