@@ -30,7 +30,7 @@
 - JavaScript
   - No errors were found when passing through [JSHint](https://jshint.com/)
     - script.js
-    - There are three undefined variables. The reason for this is, that these variables are pulled from word.js.
+    - There are three undefined variables. The reason for this is, that these variables are pulled from words.js.
     ![JavaScript script.js](documentation/screenshots/jshintscript.png)
     - words.js
     - There are three unused variables. The reason for this is, that they are used in script.js.
