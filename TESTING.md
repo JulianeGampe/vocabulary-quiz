@@ -20,17 +20,20 @@
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjulianegampe.github.io%2Fvocabulary-quiz%2F)
+  - There are four warnings that are known as acceptable.
     ![HTML Checker](documentation/screenshots/htmlchecker.png)
 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulianegampe.github.io%2Fvocabulary-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors or warnings were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulianegampe.github.io%2Fvocabulary-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
     ![CSS Validation](documentation/screenshots/cssvalidation.png)
 
 - JavaScript
   - No errors were found when passing through [JSHint](https://jshint.com/)
     - script.js
+    - There are three undefined variables. The reason for this is, that these variables are pulled from word.js.
     ![JavaScript script.js](documentation/screenshots/jshintscript.png)
     - words.js
+    - There are three unused variables. The reason for this is, that they are used in script.js.
     ![JavaScript words.js](documentation/screenshots/jshintwords.png)
 
 ### Browser Compatibility
