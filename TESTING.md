@@ -109,7 +109,8 @@
 
 ### Known Bugs/Warnings
 
-
+- When finishing the quiz the console shows an error with permissions policy. I am aware of this error and there is currently no code that can be added to control this. According to this [article](https://paramdeo.com/blog/opting-your-website-out-of-googles-floc-network) GitHub Pages is supposed to block it, but does not.
+![Permissions Policy Error](documentation/screenshots/permissionspolicyerror.png)
 
 ---
 
