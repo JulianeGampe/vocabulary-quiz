@@ -47,7 +47,7 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
 
 - __Quiz Type Buttons__
 
-  - Three quiz type buttons will allow the user to choose between three different quiz types depending on the topic they would like to test their vocabulary knowledge in. The buttons have appropriate icons to give a visuel cue as well.
+  - Three quiz type buttons will allow the user to choose between three different quiz types depending on the topic they would like to test their vocabulary knowledge in. The buttons have appropriate icons to give a visual cue as well.
 
 ![Quiz Type Buttons](documentation/screenshots/quiztype.png)
 
@@ -67,7 +67,7 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
 
   - This section will display nine buttons with nine different German words that the user can click.
   - If the word is matching the English word, the box will appear in green and a new English word will appear.
-  - If the word is incorrect the box will appear in red the user can try again.
+  - If the word is incorrect the box will appear in red and the user can try again.
 
 ![German Words](documentation/screenshots/germanwords.png)
 
@@ -79,7 +79,7 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
 
 - __Restart Game__
 
-  - This button will allow the user to restart the game and set the number of attempts to zero and reload all words. 
+  - This button will allow the user to restart the game and reload the page.
 
 ![Restart Game](documentation/screenshots/restartgame.png)
 
@@ -118,8 +118,6 @@ Wireframes created with Balsamiq were used to plan the layout of the website.
 Due to the length of testing, you can see all tests in the [TESTING.md](TESTING.md) file.
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
